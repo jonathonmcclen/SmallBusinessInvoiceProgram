@@ -1,2 +1,2 @@
-# SmallBusinessInvoiceProgram
-smalll business can save maintain and export invoices for email
+# Small Business Invoice Program
+small business can save, maintain, and export invoices or lists of invoices to email.
