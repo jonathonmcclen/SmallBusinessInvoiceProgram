@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Clone Final</title>
+    <link rel="stylesheet" href="twitter_clone.css" type="text/css">  
+  </head>
+  <body id="page-top">
+    <h1>Twitter Clone</h1>
+
+    <div class="center" id="form-bg">
+        <h1><%=@user%><h1>
+        <h2><%=@post.content%></h2>
+
+        <%if session["username"] == @user%>
+          <div><a href="/edit_post/<%=@post.id%>">EDIT</a>&nbsp<a href="/delete_post/<%=@post.id%>">DELETE</a></div>
+        <%end%>
+
+    </div>
+  </body>
+</html>

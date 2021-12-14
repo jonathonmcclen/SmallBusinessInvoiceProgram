@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Clone Final</title>
+    <link rel="stylesheet" href="twitter_clone.css" type="text/css">  
+  </head>
+  <body id="page-top">
+    <h1 class="center">Twitter Clone</h1>
+
+    <div class="container center">
+        <div class="center" id="form-bg">
+
+            <h3>Create An Account</h3>
+            <h5><%=params[:message]%></h5>
+
+            <form id="form" method="post" action="/create_account">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username">
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="text" name="password">
+                <br>
+                <label for="rePassword">Confirm Password:</label><br>
+                <input type="text" name="rePassword">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+            <br>
+            <a href="/">Login</a>
+        </div>
+    <div>
+  </body>
+</html>

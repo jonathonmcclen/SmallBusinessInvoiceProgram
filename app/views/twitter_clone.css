@@ -1,0 +1,16 @@
+#form-bg{
+    background-color: #0101010;
+    width: 500px;
+    text-align: center;
+    padding: 50px 30px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.center{
+    text-align:center;
+    align-content: center;
+}
+
+.flex{
+    display: flex;
+}

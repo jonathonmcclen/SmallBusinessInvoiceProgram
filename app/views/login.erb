@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Clone Final</title>
+    <link rel="stylesheet" href="twitter_clone.css" type="text/css">  
+  </head>
+  <body id="page-top">
+    <h1 class="center">Twitter Clone Final</h1>
+    <div class="container center">
+        <div class="center" id="form-bg">
+            <h4><%=params[:success]%></h4>
+            <h3>Login</h3>
+
+            <form id="form" method="post" action="/logged_in">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username" value="<%= params[:username]%>">
+                <br>
+                <label for="password">Password:</label><br>
+                <input type="text" name="password">
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+            <br>
+            <a href="/create_account">Create Account</a>
+        </div>
+    <div>
+  </body>
+</html>

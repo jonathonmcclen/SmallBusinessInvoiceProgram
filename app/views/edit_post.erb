@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Twitter Clone Final</title>
+    <link rel="stylesheet" href="twitter_clone.css" type="text/css">  
+  </head>
+  <body id="page-top">
+    <h1 class="center">Twitter Clone Final</h1>
+    <div class="container center">
+        <div class="center" id="form-bg">
+
+            <h3>Edit Post</h3>
+
+            <form id="form" method="post" action="/edit_post/<%=params[:post_id]%>">
+                <label for="content">Text Content:</label><br>
+                <textarea id="content" name="content" rows="4" cols="50">
+                <%=@post.content%>
+                </textarea>
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+        </div>
+    <div>
+  </body>
+</html>
